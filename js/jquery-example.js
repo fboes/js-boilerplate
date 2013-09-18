@@ -37,8 +37,3 @@
 		});
 	}
 })(jQuery);
-
-// You may want to move this someplace else
-$(document).ready(function() {
-	$('#container').examplePlugin({});
-});
