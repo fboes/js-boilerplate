@@ -17,6 +17,7 @@
 					this.elements.parent = el;
 					// Your stuff here
 					this.bindEvents();
+					this.update();
 				},
 				bindEvents : function () {
 					var that = this;
