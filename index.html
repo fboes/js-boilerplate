@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8" />
 		<title>JS Boilerplates</title>
 	</head>
 	<body>
@@ -8,8 +9,16 @@
 			…
 		</div>
 
+		<!-- jQuery -->
 		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="js/main.js"></script>
 		<script src="js/jquery-example.js"></script>
+		<script>/*<![CDATA[*/
+		$(document).ready(function() {
+			$('#container').examplePlugin({});
+		});
+		/*]]>*/</script>
+
+		<!-- Stand-Alone -->
+		<script src="js/main.js"></script>
 	</body>
 </html>
