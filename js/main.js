@@ -1,11 +1,15 @@
 var TheMachine = {
+	options : {
+
+	},
 	elements : {
 		parent : null
 	},
 	values : {
 
 	},
-	init : function () {
+	init : function (options) {
+		this.options = options;
 		// Your stuff here
 		this.elements.parent = $('#container');
 		this.bindEvents();
