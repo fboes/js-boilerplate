@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<title>JS Boilerplates</title>
-	</head>
-	<body>
-		<div id="container">
-			…
+<head>
+	<meta charset="UTF-8" />
+	<title>JS Boilerplates</title>
+</head>
+<body>
+	<div id="container">
+		<div id="banner" class="header">
+			<header role="banner"><!-- --></header>
 		</div>
+		<div id="navigation" class="nav">
+			<nav role="navigation"><!-- --></nav>
+		</div>
+		<div id="main" class="main">
+			<main role="main"><!-- --></main>
+		</div>
+		<div id="sidebar" class="aside">
+			<aside role="complementary"><!-- --></aside>
+		</div>
+		<div id="footer" class="footer">
+			<footer role="contentinfo"><!-- --></footer>
+		</div>
+	</div>
 
-		<!-- jQuery -->
-		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="js/jquery-example.js"></script>
-		<script>/*<![CDATA[*/
-		$(document).ready(function() {
-			$('#container').examplePlugin({});
-		});
-		/*]]>*/</script>
+	<!-- jQuery -->
+	<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/jquery-example.js"></script>
+	<script>/*<![CDATA[*/
+	$(document).ready(function() {
+		$('#container').examplePlugin({});
+	});
+	/*]]>*/</script>
 
-		<!-- Stand-Alone -->
-		<script src="js/main.js"></script>
-	</body>
+	<!-- Stand-Alone -->
+	<script src="js/main.js"></script>
+</body>
 </html>
