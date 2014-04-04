@@ -3,11 +3,10 @@ js-boilerplate
 
 Simple boilerplate for quickly adding JS application logic to your HTML.
 
-Comes in three flavors:
+Comes in two flavors:
 
+* Stand-alone main.js without jQuery (only tested in non-IE browsers)
 * jQuery plugin
-* Stand-alone main.js without jQuery
-* Combination of jQuery pluginin launched by main.js
 
 Legal stuff
 -------------------------------

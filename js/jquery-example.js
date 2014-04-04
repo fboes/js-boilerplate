@@ -11,22 +11,23 @@
 					parent : null
 				},
 				values : {
-
 				},
 				init : function (el) {
 					this.elements.parent = el;
-					// Your stuff here
-					this.bindEvents();
-					this.update();
+					if (this.elements.parent.length) {
+						this.bindEvents();
+						this.update();
+					}
 				},
 				bindEvents : function () {
 					var that = this;
 					// Your stuff here
-					this.elements.parent.on('click', function (event) {
+					this.elements.parent.on('click.TheMachine', function (event) {
 						event.preventDefault();
 						event.stopPropagation();
+						// Your stuff here
 						that.update(); // $(this)
-					})
+					});
 				},
 				update : function () {
 					// Your stuff here
