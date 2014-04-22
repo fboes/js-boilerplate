@@ -1,5 +1,6 @@
 (function ($) {
 	$.fn.examplePlugin = function (options) {
+		"use strict";
 		return this.each(function() {
 			var main = {
 				options : $.extend(

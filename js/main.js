@@ -1,4 +1,5 @@
 var TheMachine = {
+	"use strict";
 	options : {
 		parentSelector : 'container'
 	},
