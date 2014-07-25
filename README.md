@@ -8,6 +8,11 @@ Comes in two flavors:
 * Stand-alone main.js without jQuery (only tested in non-IE browsers)
 * jQuery plugin
 
+Version
+-------
+
+Version: 1.1 (2014-07-25)
+
 Legal stuff
 -------------------------------
 
