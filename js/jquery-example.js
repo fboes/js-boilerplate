@@ -1,6 +1,7 @@
+/*global $,console */
 (function ($) {
+	"use strict";
 	$.fn.examplePlugin = function (options) {
-		"use strict";
 		return this.each(function() {
 			var main = {
 				options : $.extend(
@@ -34,9 +35,9 @@
 					// Your stuff here
 					console.log('TheMachine wins');
 				}
-			}
+			};
 
 			main.init($(this));
 		});
-	}
-})(jQuery);
+	};
+}($));

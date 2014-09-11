@@ -11,7 +11,7 @@ Comes in two flavors:
 Version
 -------
 
-Version: 1.1 (2014-07-25)
+Version: 1.1.1 (2014-07-25)
 
 Legal stuff
 -------------------------------
