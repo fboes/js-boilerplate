@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      my_target: {
+      build: {
         files: {
           'js/main.min.js': ['js/main.js', '!js/main.min.js'],
           'js/jquery-example.min.js': ['js/jquery-example.js', '!js/jquery-example.min.js']
