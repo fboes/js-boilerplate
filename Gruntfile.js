@@ -1,12 +1,15 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    dirs: {
+      web: ''
+    },
 
     jslint: {
       build: {
         src: [
-          'js/*.js',
-          '!js/*.min.js'
+          '<%= dirs.web %>js/*.js',
+          '!<%= dirs.web %>js/*.min.js'
         ],
         directives: {
           browser: true, white: true
@@ -20,15 +23,15 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         files: {
-          'js/main.min.js': ['js/main.js', '!js/main.min.js'],
-          'js/jquery-example.min.js': ['js/jquery-example.js', '!js/jquery-example.min.js']
+          '<%= dirs.web %>js/main.min.js': ['<%= dirs.web %>js/main.js', '!<%= dirs.web %>js/main.min.js'],
+          '<%= dirs.web %>js/jquery-example.min.js': ['<%= dirs.web %>js/jquery-example.js', '!<%= dirs.web %>js/jquery-example.min.js']
         }
       }
     },
 
     watch: {
       scripts: {
-        files: ['js/*.js', '!js/*.min.js'],
+        files: ['<%= jslint.build.src %>'],
         tasks: ['jslint','uglify']
       }
     }
