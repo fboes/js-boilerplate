@@ -26,10 +26,12 @@
 		bindEvents : function () {
 			var that = this;
 			// Your stuff here
-			this.elements.parent.addEventListener('click', function () {
+			this.elements.parent.addEventListener('click', function ( event ) {
+				event.preventDefault();
 				event.stopPropagation();
 				// Your stuff here
-				that.update(); // this
+				console.log(this);
+				that.update();
 			},false);
 		},
 		update : function () {

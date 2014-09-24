@@ -28,7 +28,8 @@
 						event.preventDefault();
 						event.stopPropagation();
 						// Your stuff here
-						that.update(); // $(this)
+						console.log($(this));
+						that.update();
 					});
 				},
 				update : function () {

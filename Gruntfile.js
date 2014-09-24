@@ -42,6 +42,9 @@ module.exports = function(grunt) {
 			scripts: {
 				files: ['<%= jslint.build.src %>'],
 				tasks: ['jslint','uglify']
+			},
+			html: {
+				files: ['*.html']
 			}
 		}
 	});
