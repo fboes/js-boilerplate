@@ -1,24 +1,24 @@
 /*global console */
-(function () {
-	"use strict";
-	var TheMachine = {
+
+var exampleMachine = function(parentEl, parentOptions) {
+	'use strict';
+	var main = {
 		options : {
-			parentSelector : 'container'
 		},
 		elements : {
 			parent : null
 		},
 		values : {
 		},
-		init : function (options) {
+		init : function () {
 			var attrname;
-			for (attrname in options) {
-				if (options.hasOwnProperty(attrname)) {
-					this.options[attrname] = options[attrname];
+			for (attrname in parentOptions) {
+				if (parentOptions.hasOwnProperty(attrname)) {
+					this.options[attrname] = parentOptions[attrname];
 				}
 			}
-			this.elements.parent = document.getElementById(this.options.parentSelector);
-			if (this.elements.parent !== undefined) {
+			this.elements.parent = parentEl;
+			if (this.elements.parent !== undefined && this.elements.parent !== null) {
 				this.bindEvents();
 				this.update();
 			}
@@ -36,12 +36,15 @@
 		},
 		update : function () {
 			// Your stuff here
-			console.log('TheMachine wins');
+			console.log('exampleMachine wins');
 		}
 	};
+	main.init();
+};
 
-	// You may want to move this someplace else
-	window.onload = function() {
-		TheMachine.init();
-	};
-}());
+// You may want to move this someplace else
+window.onload = function() {
+	'use strict';
+	exampleMachine(document.getElementById('container'));
+	// document.getElementsByClassName('header')
+};

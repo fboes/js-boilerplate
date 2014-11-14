@@ -1,6 +1,6 @@
 /*global $,console */
 (function ($) {
-	"use strict";
+	'use strict';
 	$.fn.examplePlugin = function (options) {
 		return this.each(function() {
 			var main = {
@@ -24,7 +24,7 @@
 				bindEvents : function () {
 					var that = this;
 					// Your stuff here
-					this.elements.parent.on('click.TheMachine', function (event) {
+					this.elements.parent.on('click.examplePlugin', function (event) {
 						event.preventDefault();
 						event.stopPropagation();
 						// Your stuff here
@@ -34,7 +34,7 @@
 				},
 				update : function () {
 					// Your stuff here
-					console.log('TheMachine wins');
+					console.log('examplePlugin wins');
 				}
 			};
 
@@ -42,3 +42,9 @@
 		});
 	};
 }($));
+
+// You may want to move this someplace else
+$(document).ready(function() {
+	'use strict';
+	$('#container').examplePlugin({});
+});
