@@ -46,5 +46,6 @@
 // You may want to move this someplace else
 $(document).ready(function() {
 	'use strict';
-	$('#container').examplePlugin({});
+	//$('#container').examplePlugin({});
+	$('.js-examplePlugin').examplePlugin({});
 });
