@@ -13,6 +13,11 @@ Version
 
 Version: 1.1.1 (2014-07-25)
 
+Installation
+------------
+
+Via [Bower](http://bower.io/): `bower install fboes/js-boilerplate`
+
 Legal stuff
 -------------------------------
 
