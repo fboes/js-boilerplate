@@ -16,7 +16,8 @@ Version: 1.1.1 (2014-07-25)
 Installation
 ------------
 
-Via [Bower](http://bower.io/): `bower install fboes/js-boilerplate`
+* Via [Bower](http://bower.io/): `bower install fboes/js-boilerplate`
+* Via [NPM](https://www.npmjs.org/): `npm install git+https://github.com/fboes/js-boilerplate.git`
 
 Legal stuff
 -------------------------------
