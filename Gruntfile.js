@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 			build: {
 				files: {
 					'<%= dirs.web %>js/main.min.js': ['<%= dirs.web %>js/main.js', '!<%= dirs.web %>js/main.min.js'],
-					'<%= dirs.web %>js/jquery-example.min.js': ['<%= dirs.web %>js/jquery-example.js', '!<%= dirs.web %>js/jquery-example.min.js']
+					'<%= dirs.web %>js/main.jquery.min.js': ['<%= dirs.web %>js/main.jquery.js', '!<%= dirs.web %>js/main.jquery.min.js']
 				}
 			}
 		},

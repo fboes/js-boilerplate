@@ -1,23 +1,21 @@
 /*global console */
 
-var exampleMachine = function(parentEls, parentOptions) {
+var exampleMachine = function(parentEls) { // function(parentEls, parentOptions)
 	'use strict';
 	Array.prototype.filter.call(parentEls, function(el) {
 		var main = {
-			options : {
-			},
+			/*options : {},*/
 			elements : {
 				parent : null
 			},
-			values : {
-			},
+			/*values : {},*/
 			init : function (el) {
-				var attrname;
+				/*var attrname;
 				for (attrname in parentOptions) {
 					if (parentOptions.hasOwnProperty(attrname)) {
 						this.options[attrname] = parentOptions[attrname];
 					}
-				}
+				}*/
 				this.elements.parent = el;
 				if (this.elements.parent !== undefined && this.elements.parent !== null) {
 					this.bindEvents();
@@ -48,5 +46,5 @@ var exampleMachine = function(parentEls, parentOptions) {
 window.onload = function() {
 	'use strict';
 	//exampleMachine([document.getElementById('container')], {});
-	exampleMachine(document.getElementsByClassName('js-exampleMachine'), {});
+	exampleMachine(document.getElementsByClassName('js-exampleMachine'));
 };
